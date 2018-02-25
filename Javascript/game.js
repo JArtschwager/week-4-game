@@ -27,6 +27,11 @@ function newGame() {
     $("#totalScore").text(addingScore);
     $(".winsValue").text(wins);
     $(".lossValue").text(losses);
+    $(".congrats").hide();
+    $(".failure").hide();
+    $(".jemsToClick").show();
+
+
 }
 
 function addValue(jemID) {
@@ -49,13 +54,22 @@ function addValue(jemID) {
 
 function youWin() {
     wins += 1;
-    newGame();
-    // $(".winsValue").text(wins);
+    $(".congrats").show();
+    $(".jemsToClick").hide();
+    setTimeout(function() {
+        newGame();
+    }, 3000);
 }
 function youLose() {
     losses += 1;
-    newGame();
+    $(".failure").show();
+    $(".jemsToClick").hide();
+    setTimeout(function() {
+        newGame();
+    }, 3000);
 }
+
+
 
     //do the on click for each jem
     $(".blueJem").click(function() {

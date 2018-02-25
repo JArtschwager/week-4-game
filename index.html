@@ -15,8 +15,8 @@
 
     <header>
         <div class="headerText">
-        <h1>Crystal Collector</h1>
-    </div>
+            <h1>Crystal Collector</h1>
+        </div>
     </header>
     <div class="container">
         <div class="row">
@@ -42,43 +42,51 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-7 resultsBox">
-                <p class="goalnumber"> 
-                </p>
+            <div class="col-md-7">
+                <div class="resultsBox">
+                    <p class="goalnumber">
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4 winsLosses">
-                <p class="wins">Wins: <span class="winsValue"></span></p>
-                <p class="losses">Losses: <span class="lossValue"></span></p>
+            <div class="col-md-5">
+                <div class="winsLosses">
+                    <div class="wins">Wins:
+                        <span class="winsValue"></span>
+                    </div>
+                    <div class="losses">Losses:
+                        <span class="lossValue loser"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
+            <div class="col-md-7">
+                <div class="congrats">You Won! WooHoo!</div>
+                <div class="failure">You lost ya bum!</div>
 
-            <div class="jemsToClick">
-                <img class="blueJem" src="images/crystal.png" alt="Blue diamond" width="100">
-                <img class="greenJem" src="images/greenCrystal.png" alt="green Crystal" width="100">
-                <img class="orangeJem" src="images/orange-crystal.jpg" alt="orange Jem" width="100">
-                <img class="purpleJem" src="images/purpleCrystal.jpeg" alt="Purple Crystal" width="100">
-            </div>
-        </div>
-    </div>
-    <div class="container lastRow">
-        <div class="row">
-            <div class="col-md-5 boxColor">
-                <p>Your total score is: <span id="totalScore"></span></p>
+                <div class="jemsToClick">
+                    <img class="blueJem" src="images/crystal.png" alt="Blue diamond">
+                    <img class="greenJem" src="images/greenCrystal.png" alt="green Crystal">
+                    <img class="orangeJem" src="images/orange-crystal.jpg" alt="orange Jem">
+                    <img class="purpleJem" src="images/purpleCrystal.jpeg" alt="Purple Crystal">
+                </div>
             </div>
             <div class="col-md-5">
-                <p class="responseScore">0</p>
+                <div class="boxColor">
+                    <p>Your total score is:
+                        <span id="totalScore"></span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="Javascript/game.js"></script>
 
 

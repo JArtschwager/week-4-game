@@ -1,6 +1,5 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     background-image: url("../images/background.jpg");
 
 }
@@ -23,6 +22,11 @@ header {
 .blueJem, .orangeJem, .greenJem, .purpleJem {
     margin: 10px;
     border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+
 }
 
 
@@ -45,23 +49,38 @@ header {
     padding-bottom: 20px;
     padding-right: 10px;
     padding-left: 10px;
+    font-size: 30px;
+    text-align: center; 
 }
 
 .jemsToClick {
     border: 2px solid black;
 }
-.randomNumbers {
+
+.congrats, .failure {
+    font-size: 40px;
+    color: #645E9D;
+    background-color: white;
+    padding: 50px;
+}
+/* .goalNumber {
     background-color: yellow;
     margin: 20px;
-}
+    font-size: 30px;
+} */
 .winsLosses {
     background-color: #645E9D;
-    margin-left: 20px;
+    color: #C8D5B9;
+    padding: 10px;
+    font-size: 30px;
     
 }
 .jemsToClick {
-    background-color: white;
-    padding: 20px;
+    background-color: rgba(130,160,188,0.5);
+    text-align: center;
+
+    /* padding: 20px; */
+    
     
 }
 .boxColor {
@@ -76,8 +95,4 @@ header {
     background-color: #C8D5B9;
     padding: 20px;
     font-size: 20px; 
-}
-
-.lastRow {
-    padding: 20px;
 }
