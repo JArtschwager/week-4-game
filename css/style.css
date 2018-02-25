@@ -1,0 +1,83 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-image: url("../images/background.jpg");
+
+}
+
+.container {
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+header {
+    background-color: #304D6D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FAF3DD;
+    padding-left: 20px;
+    border-bottom: 5px solid #FAF3DD;
+}
+
+.blueJem, .orangeJem, .greenJem, .purpleJem {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+
+.headerText {
+    padding-left:20px;
+}
+.directionsBox {
+    background-color:rgba(130,160,188,0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 2px solid #304D6D;
+    color: #304D6D;
+}
+
+.resultsBox {
+    background-color: #FAF3DD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.jemsToClick {
+    border: 2px solid black;
+}
+.randomNumbers {
+    background-color: yellow;
+    margin: 20px;
+}
+.winsLosses {
+    background-color: #645E9D;
+    margin-left: 20px;
+    
+}
+.jemsToClick {
+    background-color: white;
+    padding: 20px;
+    
+}
+.boxColor {
+    background-color: #C8D5B9;
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+
+.responseScore {
+    background-color: #C8D5B9;
+    padding: 20px;
+    font-size: 20px; 
+}
+
+.lastRow {
+    padding: 20px;
+}
