@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Crystal Collectors 
 
 ## Bootstrap, Css, JavaScript, jQuery
