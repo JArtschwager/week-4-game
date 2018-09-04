@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/jpeg" href="./images/cryfavicon.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
 
     <title>Crystal Game</title>
 </head>
 
 <body>
-
     <header>
-        <div class="headerText">
-            <h1>Crystal Collector</h1>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="directionsBox">
-                    <p>You will be given a random number at the start of the game.
-
-                        <p>There are four Crystals below. By Clicking on a crystal you will add a specific amount of points
-                            to your total score</p>
-
-                        <p>You win the game by matching your total score to the random number. You lose the game if your total
-                            schore goes above the random number.</p>
-
-                        <p>The value of each Crystal is hidden from you until you click on it.</p>
-
-                        <p>Each time when the game starts, the game will change the values of each crystal.</p>
-
-                    </p>
-                </div>
+        <div class="container">
+            <div class="headerText text-center">
+                <div>Crystal Collector</div>
             </div>
         </div>
+    </header>
 
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
-                <div class="resultsBox">
+            <div class="col-md-8">
+                <div class="directionsBox box-style">
+                    <h2 class="bold-title">Directions: </h2>
+                    <ul>
+                        <li>The goal is to match the number in the Target Score to the your Total Score.</li>
+                        <li>Each crystal has a value assigned to it. Use these values to add to your score.
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resultsBox box-style text-center">
+                    <div class="title bold-title">Target Score</div>
                     <p class="goalnumber">
                     </p>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="winsLosses">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-style">
+                    <div class="congrats text-center">You Won! Congrats!</div>
+                    <div class="failure text-center">You lost, Try again</div>
+                    <div class="jemsToClick text-center">
+                        <img class="blueJem" src="images/redreal.jpg" alt="Blue diamond">
+                        <img class="greenJem" src="images/bluereal.jpeg" alt="green Crystal">
+                        <img class="orangeJem" src="images/orangereal.jpeg" alt="orange Jem">
+                        <img class="purpleJem" src="images/purplereal.png" alt="Purple Crystal">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="boxColor box-style text-center">
+                    <div class="bold-title">Total Score<br></div>
+                    <span id="totalScore"></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="winsLosses box-style text-center">
+                    <div class="bold-title">Games Results</div>
                     <div class="wins">Wins:
                         <span class="winsValue"></span>
                     </div>
@@ -60,35 +75,16 @@
             </div>
         </div>
     </div>
+   <footer class="footer-styling">
+       <div class="container">
+           <div class="footertext text-center">
+               Jennifer.Artschwager.com
+           </div>
+       </div>
+   </footer> 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="congrats">You Won! WooHoo!</div>
-                <div class="failure">You lost ya bum!</div>
-
-                <div class="jemsToClick">
-                    <img class="blueJem" src="images/crystal.png" alt="Blue diamond">
-                    <img class="greenJem" src="images/greenCrystal.png" alt="green Crystal">
-                    <img class="orangeJem" src="images/orange-crystal.jpg" alt="orange Jem">
-                    <img class="purpleJem" src="images/purpleCrystal.jpeg" alt="Purple Crystal">
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="boxColor">
-                    <p>Your total score is:
-                        <span id="totalScore"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="Javascript/game.js"></script>
-
 
 </body>
 

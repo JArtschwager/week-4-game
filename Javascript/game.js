@@ -12,11 +12,10 @@ function newGame() {
     goalNumber= Math.floor(Math.random() * (50-25+1)+25);
     console.log(goalNumber);
 
-    // calculating and creating the jem values
+    // calculating the jem values
     randomCompNumbers= [];
     addingScore= 0;
-    //above puts the array back to empty before the new game.
-    //sets Jem values 0-3 randomCompNumbers[1] to call later
+    //above - array back to empty before the new game.
     for (i = 0; i < 4; i++) {
         var newRand= Math.floor(Math.random() * (12-1+1)+1);
         randomCompNumbers.push(newRand);
@@ -87,14 +86,5 @@ function youLose() {
     });
 
 
-
-
-// if (randomNumber === responseScore) {
-//     wins += 1;
-//     // document.getElementById("wins").innerHTML = wins;
-//     newRound();
-// }
-
-
-//this calls the new game.
+//call the new game.
 newGame()
